@@ -1,13 +1,16 @@
+/* Default Styles */
 .footer-container {
   display: flex;
+  flex-wrap: wrap;
   height: 60vh;
-  gap: 1rem;
+  gap: 2rem;
   padding: 0px 8rem 50px 8rem;
   width: 100%;
   justify-content: space-between;
   align-items: center;
 }
 
+/* Footer Text */
 .footer {
   font-size: 2.4rem;
   display: flex;
@@ -20,10 +23,6 @@
   font-weight: 600;
 }
 
-.footer > p:nth-child(1) {
-  width: auto;
-}
-
 p a {
   color: yellow;
   cursor: pointer;
@@ -33,22 +32,16 @@ p a:hover {
   text-decoration: underline;
 }
 
+/* Social Icons */
 .social {
-  width: 50%;
+  width: 100%;
   display: flex;
   gap: 2rem;
   justify-content: start;
   align-items: end;
+  flex-wrap: wrap;
 }
-.address {
-  font-size: 1.5rem;
-  display: flex;
-  gap: 2rem;
-  flex-direction: column;
-  justify-content: start;
-  align-items: start;
-  line-height: 2rem;
-}
+
 .social img {
   width: 3rem;
   height: 3rem;
@@ -67,6 +60,17 @@ p a:hover {
   border: 1px solid whitesmoke;
 }
 
+/* Address */
+.address {
+  font-size: 1.5rem;
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  line-height: 2rem;
+}
+
 .f-h5 {
   display: flex;
   justify-content: start;
@@ -75,27 +79,58 @@ p a:hover {
   color: aquamarine;
 }
 
-@media screen and (max-width: 1280px) and (min-width: 1536px) {
+/* 📌 Large Screens (1536px and above) */
+@media screen and (min-width: 1536px) {
+  .footer-container {
+    padding: 0px 10rem;
+  }
 }
-@media screen and (min-width: 600px) and (max-width: 1024px) {
+
+/* 📌 Tablets (601px - 1024px) */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
   .footer-container {
     flex-direction: column;
     height: auto;
+    padding: 3rem 4rem;
   }
+
   .footer,
   .address {
-    width: 100vw;
-    padding: 0px 20px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .social {
+    width: 100%;
+    justify-content: center;
+    gap: 1.5rem;
   }
 }
+
+/* 📌 Mobile (max-width: 600px) */
 @media screen and (max-width: 600px) {
   .footer-container {
     flex-direction: column;
     height: auto;
+    padding: 2rem 1rem;
+    gap: 3rem;
   }
-  .footer,
+
+  .footer {
+    font-size: 1.8rem;
+    width: 100%;
+    text-align: center;
+  }
+
   .address {
-    width: 100vw;
-    padding: 0px 20px;
+    width: 100%;
+    text-align: center;
+    font-size: 1.4rem;
+  }
+
+  .social {
+    width: 100%;
+    justify-content: center;
+    gap: 1rem;
   }
 }
