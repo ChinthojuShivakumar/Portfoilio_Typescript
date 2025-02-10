@@ -79,7 +79,7 @@
 /* 📌 Mobile (max-width: 600px) */
 @media screen and (max-width: 600px) {
   .about-container {
-    flex-direction: column;
+    flex-direction: column-reverse;
     height: auto;
     padding: 2rem 1rem;
     gap: 2rem;
@@ -125,7 +125,7 @@
 /* 📌 Tablet (601px - 1024px) */
 @media screen and (min-width: 601px) and (max-width: 1024px) {
   .about-container {
-    flex-direction: column;
+    flex-direction: column-reverse;
     gap: 4rem;
     padding: 3rem;
   }
