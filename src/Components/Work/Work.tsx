@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Work.css";
 import JP from "../../assets/Jp.png";
 import EMS from "../../assets/ems.png";
-import Test from "../../assets/Test.gif";
+import Test from "../../assets/Infinite.png";
 import { Box, Modal } from "@mui/material";
 
 interface Projects {
