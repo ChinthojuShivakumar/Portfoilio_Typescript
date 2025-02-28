@@ -8,7 +8,7 @@ const Header: React.FC = () => {
       <div className="header-container">
         <div className="text-div">
           <h5>Hello There, I'm</h5>
-          <h1>Shiva Kumar Chinthoju</h1>
+          <h1>Shiva Kumar Chinthoju </h1>
           <p style={{ display: "flex", gap: "10px" }}>
             I am into{" "}
             <span>
