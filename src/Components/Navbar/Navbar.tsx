@@ -83,7 +83,7 @@ const Navbar: React.FC = () => {
             </div>
             <div className="resume-containter">
               <iframe
-                src="ShivaResume02062025.pdf"
+                src="ShivaResume29052025.pdf"
                 className="resume"
                 width="100%"
                 height="400px"
