@@ -2,7 +2,11 @@ import React from "react";
 import "./Header.css";
 import Typewriter from "typewriter-effect";
 const Header: React.FC = () => {
-  const roles: string[] = ["Frontend Development", "Backend Development"];
+  const roles: string[] = [
+    "Frontend Development",
+    "Backend Development",
+    "Mobile Development",
+  ];
   return (
     <div className="container">
       <div className="header-container">
@@ -39,8 +43,8 @@ const Header: React.FC = () => {
           </a>
           <button id="resume-d" className="resume-download" type="button">
             <a
-              href={"ShivaResume02062025.pdf"}
-              download={"ShivaResume02062025.pdf"}
+              href={"ShivaResume29052025.pdf"}
+              download={"ShivaResume29052025.pdf"}
               target="_blank"
               rel="noopener noreferrer"
               // style={{ textDecoration: "none", color:"white" }}

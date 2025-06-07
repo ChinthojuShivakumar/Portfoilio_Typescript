@@ -92,8 +92,8 @@ const Navbar: React.FC = () => {
             <div className="button-container">
               <button className="resume-download" type="button">
                 <a
-                  href={"ShivaResume02062025.pdf"}
-                  download={"ShivaResume02062025.pdf"}
+                  href={"ShivaResume29052025.pdf"}
+                  download={"ShivaResume29052025.pdf"}
                   target="_blank"
                   rel="noopener noreferrer"
                   // style={{ textDecoration: "none", color:"white" }}
