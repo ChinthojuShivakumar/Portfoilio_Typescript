@@ -1,7 +1,11 @@
 import { Button } from "@/components/ui/button";
-import { Github, Linkedin, Mail, FileText, ArrowDown } from "lucide-react";
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
+import { Github, Linkedin, Mail, FileText, ArrowDown, Download } from "lucide-react";
+import { useState } from "react";
 
 const Hero = () => {
+  const [isResumeOpen, setIsResumeOpen] = useState(false);
+  
   const scrollToSection = (id: string) => {
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
   };
@@ -46,6 +50,45 @@ const Hero = () => {
               <Mail className="mr-2 h-5 w-5 group-hover:animate-bounce" />
               Get In Touch
             </Button>
+            
+            <Dialog open={isResumeOpen} onOpenChange={setIsResumeOpen}>
+              <DialogTrigger asChild>
+                <Button 
+                  size="lg" 
+                  variant="outline"
+                  className="border-primary/50 hover:bg-primary/10 hover:border-primary transition-all duration-300"
+                >
+                  <FileText className="mr-2 h-5 w-5" />
+                  View Resume
+                </Button>
+              </DialogTrigger>
+              <DialogContent className="max-w-4xl h-[90vh] flex flex-col">
+                <DialogHeader>
+                  <DialogTitle className="flex items-center justify-between">
+                    <span>Resume - Shiva Kumar Chinthoju</span>
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      asChild
+                      className="border-primary/50 hover:bg-primary/10"
+                    >
+                      <a href="/ShivaKumarResume.pdf" download="ShivaKumarResume.pdf">
+                        <Download className="mr-2 h-4 w-4" />
+                        Download
+                      </a>
+                    </Button>
+                  </DialogTitle>
+                </DialogHeader>
+                <div className="flex-1 overflow-hidden">
+                  <iframe
+                    src="/ShivaKumarResume.pdf"
+                    className="w-full h-full border-0 rounded-lg"
+                    title="Resume"
+                  />
+                </div>
+              </DialogContent>
+            </Dialog>
+            
             <Button 
               size="lg" 
               variant="outline"

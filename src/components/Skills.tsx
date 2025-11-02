@@ -17,7 +17,7 @@ const Skills = () => {
     },
     {
       category: "Tools",
-      skills: ["Git", "GitHub", "Jira", "VS Code"]
+      skills: ["Git", "GitHub", "Jira", "VS Code", "Docker", "Azure VM"]
     },
     {
       category: "Other",
